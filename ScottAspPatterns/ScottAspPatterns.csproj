@@ -183,6 +183,13 @@
     <Compile Include="State\Order.cs" />
     <Compile Include="State\OrderShippedState.cs" />
     <Compile Include="State\OrderStatus.cs" />
+    <Compile Include="Strategy\Basket.cs" />
+    <Compile Include="Strategy\BasketDiscountFactory.cs" />
+    <Compile Include="Strategy\BasketDiscountMoneyOff.cs" />
+    <Compile Include="Strategy\BasketDiscountPercentageOff.cs" />
+    <Compile Include="Strategy\DiscountType.cs" />
+    <Compile Include="Strategy\IBasketDiscountStrategy.cs" />
+    <Compile Include="Strategy\NoBasketDiscount.cs" />
     <Compile Include="Template\FaultyReturn.cs" />
     <Compile Include="Template\NoQuibblesReturn.cs" />
     <Compile Include="Template\ReturnAction.cs" />
