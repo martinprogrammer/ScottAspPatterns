@@ -176,6 +176,9 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Decorator\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specification\CustomerAccount.cs" />
+    <Compile Include="Specification\HasReachedRentalThresholdSpecification.cs" />
+    <Compile Include="Specification\ISpecification.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="State\CanceledOrderState.cs" />
     <Compile Include="State\IOrderState.cs" />
