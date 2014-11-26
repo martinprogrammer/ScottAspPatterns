@@ -158,6 +158,14 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="CompositePattern\AddSpecification.cs" />
+    <Compile Include="CompositePattern\CompositeSpecification.cs" />
+    <Compile Include="CompositePattern\CustomerAccount.cs" />
+    <Compile Include="CompositePattern\CustomerAccountStillActive.cs" />
+    <Compile Include="CompositePattern\CustomersAccountHasLateFees.cs" />
+    <Compile Include="CompositePattern\HasReachedRentalThresholdSpecification.cs" />
+    <Compile Include="CompositePattern\ISpecification.cs" />
+    <Compile Include="CompositePattern\NotSpecification.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
