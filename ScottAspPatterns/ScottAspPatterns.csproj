@@ -174,6 +174,12 @@
     <Compile Include="Decorator\IRepository.cs" />
     <Compile Include="Decorator\ProductService.cs" />
     <Compile Include="Decorator\TradeDiscountPriceDecorator.cs" />
+    <Compile Include="DIP\ChristmasProductDiscount.cs" />
+    <Compile Include="DIP\ILinqProductRepository.cs" />
+    <Compile Include="DIP\IProductDiscount.cs" />
+    <Compile Include="DIP\LinqProductRepository.cs" />
+    <Compile Include="DIP\Product.cs" />
+    <Compile Include="DIP\ProductService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
