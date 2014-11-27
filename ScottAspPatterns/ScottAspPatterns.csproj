@@ -183,8 +183,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceSegregation\BlueRayDisc.cs" />
+    <Compile Include="InterfaceSegregation\DVD.cs" />
+    <Compile Include="InterfaceSegregation\IMovie.cs" />
+    <Compile Include="InterfaceSegregation\IProduct.cs" />
+    <Compile Include="InterfaceSegregation\TShirt.cs" />
     <Compile Include="LayerSupertype\Customer.cs" />
     <Compile Include="LayerSupertype\EntityBase.cs" />
+    <Compile Include="LiskovSubstitution\MockPaypalWebService.cs" />
+    <Compile Include="LiskovSubstitution\MockWorldPayWebService.cs" />
+    <Compile Include="LiskovSubstitution\PaymentServiceBase.cs" />
+    <Compile Include="LiskovSubstitution\PaymentServiceFactory.cs" />
+    <Compile Include="LiskovSubstitution\PaymentType.cs" />
+    <Compile Include="LiskovSubstitution\PaypalPayment.cs" />
+    <Compile Include="LiskovSubstitution\RefundRequest.cs" />
+    <Compile Include="LiskovSubstitution\RefundResponse.cs" />
+    <Compile Include="LiskovSubstitution\RefundService.cs" />
+    <Compile Include="LiskovSubstitution\WorldPayPayment.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Decorator\BasePrice.cs" />
     <Compile Include="Models\IdentityModels.cs" />
