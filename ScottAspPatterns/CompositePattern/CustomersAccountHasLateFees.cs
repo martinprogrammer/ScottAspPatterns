@@ -5,11 +5,12 @@ using System.Web;
 
 namespace ScottAspPatterns.CompositePattern
 {
-    public class CustomersAccountHasLateFees : ISpecification<CustomerAccount>
+    public class CustomersAccountHasLateFees : CompositeSpecification<CustomerAccount>
     {
-        public bool IsSatisfied(CustomerAccount candidate)
+
+        public override bool IsSatisfied(CustomerAccount candidate)
         {
-            return candidate.LateFees > 0;
+            return candidate.LateFees > 0; ;
         }
     }
 }

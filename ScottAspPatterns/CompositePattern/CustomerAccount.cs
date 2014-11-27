@@ -8,9 +8,13 @@ namespace ScottAspPatterns.CompositePattern
     public class CustomerAccount
     {
         private ISpecification<CustomerAccount> _hasReachedRentalThreshold;
+        private ISpecification<CustomerAccount> _customerAccountActive;
+        private ISpecification<CustomerAccount> _customerAccountHasLateFees;
        public CustomerAccount()
         {
             _hasReachedRentalThreshold = new HasReachedRentalThresholdSpecification();
+            _customerAccountActive = new CustomerAccountStillActive();
+            _customerAccountHasLateFees = new CustomersAccountHasLateFees();
         }
        public decimal NumberOfRentalsThisMonth { get; set; }
        public bool AccountActive { get; set; }
@@ -18,7 +22,9 @@ namespace ScottAspPatterns.CompositePattern
 
        public bool CanRent()
        {
-           return _hasReachedRentalThreshold.IsSatisfied(this);
+           ISpecification<CustomerAccount> canRent =
+               _customerAccountActive.And(_hasReachedRentalThreshold.Not()).And(_customerAccountHasLateFees.Not());
+           return canRent.IsSatisfied(this);
        }
     }
 }

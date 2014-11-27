@@ -5,13 +5,13 @@ using System.Text;
 
 namespace ScottAspPatterns.CompositePattern
 {
-    public class HasReachedRentalThresholdSpecification : ISpecification<CustomerAccount>
+    public class HasReachedRentalThresholdSpecification : CompositeSpecification<CustomerAccount>
     {
-        public bool IsSatisfied(CustomerAccount candidate)
-        {
-            return candidate.LateFees == 0;
-        }
 
-      
+
+        public override bool IsSatisfied(CustomerAccount candidate)
+        {
+            return candidate.NumberOfRentalsThisMonth > 5;
+        }
     }
 }

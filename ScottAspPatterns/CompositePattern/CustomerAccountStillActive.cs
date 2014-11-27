@@ -5,9 +5,9 @@ using System.Web;
 
 namespace ScottAspPatterns.CompositePattern
 {
-    public class CustomerAccountStillActive : ISpecification<CustomerAccount>
+    public class CustomerAccountStillActive : CompositeSpecification<CustomerAccount>
     {
-        public bool IsSatisfied(CustomerAccount candidate)
+        public override bool IsSatisfied(CustomerAccount candidate)
         {
             return candidate.AccountActive;
         }
