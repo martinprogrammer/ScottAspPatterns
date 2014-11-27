@@ -17,6 +17,7 @@ namespace ScottAspPatterns.LiskovSubstitution
         }
         public override RefundResponse Refund(decimal amount, string transactionId)
         {
+            //This is a mock Paypal Service
             MockPaypalWebService payPalWebService = new MockPaypalWebService();
             string token = payPalWebService.ObtainToken(_account, _password);
             RefundResponse refundResponse = new RefundResponse();
@@ -31,3 +32,4 @@ namespace ScottAspPatterns.LiskovSubstitution
         }
     }
 }
+
